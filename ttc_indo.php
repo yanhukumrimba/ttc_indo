@@ -28,7 +28,7 @@ $_SESSION['check'] = file_exists("logttc.txt");
 if ($_SESSION['check'] =='1'){
   luachon:
   echo "\n";
-echo$white." Impor$cam Enter$white untuk melanjutkan SC! $Berhasil Masuk$red Tidak$white untuk masuk ke TTC : ";
+echo$white." Tekan$cam Enter$white untuk melanjutkan SC! $Berhasil Masuk$red Tidak$white untuk masuk ke TTC : ";
 $_SESSION['nhap'] = trim(fgets(STDIN));
 if ($_SESSION['nhap'] !='no' and $_SESSION['nhap'] != 'No' and $_SESSION['nhap'] !=''){
 echo $red."Sai Định Dạng\n";
@@ -87,7 +87,7 @@ if ($chedo == 5 or $chedo == 7){
 }else {
   choose:
   echo "\n";
-echo $white." ✏ ".$blue."Masukkan Jumlah FB yg ingin dijalankan: ";
+echo $white." ✏ ".$blue."Jumlah FB yg ingin dijalankan: ";
 $luong=trim(fgets(STDIN));
 if ($luong<1 || $luong >20){
   echo $red."\033[1;37m~\033[1;31m Minimal 1 akun dan maksimal 20 akun !!!\n";
@@ -154,7 +154,7 @@ $listnv = [];
   if ($chon2 == 'on' or $chon2 == 'On' or $chon1 == 'ON'){
     array_push($listnv,'like');
   }
-  echo $yellow." ⏩ ".$blue."Misi Comment$pink (on/off): $white";
+  echo $yellow." ⏩ ".$blue."Misi Komentar$pink (on/off): $white";
   $chon3=trim(fgets(STDIN));
   if ($chon3 == 'on' or $chon3 == 'On' or $chon1 == 'ON'){
     array_push($listnv,'cmt');
@@ -193,12 +193,12 @@ for($v=0;$v<= 12;$v++){
 echo "\033[1;37m- ";usleep(15000);
 echo "\033[1;33m-";usleep(15000);
 echo"\n";
-echo $cyan." ✅ ".$cam."Author :$white DRP\n";
-echo $cyan." ✅ ".$cam."Username: $white".$user."\n";
-echo $cyan." ✅ ".$cam."Account number :$white $luong\n";
-echo $cyan." ✅ ".$cam."Coin :$white $xu\n";
-echo $cyan." ✅ ".$cam."ID tool :$white T001\n";
-echo $cyan." ✅ ".$cam."Verison :$white V.4\n";
+echo $cyan." ✅ ".$cam."Author :$yellow Dian Rizki Pratama\n";
+echo $cyan." ✅ ".$cam."Github :$yellow github.com/yanhukumrimba\n";
+echo $cyan." ✅ ".$cam."Instagram :$yellow yanhukumrimba\n";
+echo $cyan." ✅ ".$cam."Username: $green".$user."\n";
+echo $cyan." ✅ ".$cam."Account number :$yellow $luong\n";
+echo $cyan." ✅ ".$cam."Coin :$green $xu\n";
 echo $cyan." (Selamat Datang...^^)\n";
 for($v=0;$v<= 12;$v++){
     echo "\033[1;37m- ";usleep(15000);
@@ -229,7 +229,7 @@ if(json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$
 $h = datnick($cc,$idfb,$useragent);
 if ($h == '1'){
 echo "                                                    \r";
-echo $white." Supports TTC - ".$green."Account: $cam".$tenfb." - ".$idfb."\n";
+echo $white." AKun Supports TTC - ".$green."Account: $cam".$tenfb." - ".$idfb."\n";
         $i=1;
         $max=0;
 while($i<10){
@@ -290,7 +290,7 @@ while($i<10){
           if(count($mangcookie)==1){
           echo "                                                      \r";
            for($j = $dl;$j> 0;$j--){
-             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Giây";
+             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Y";
              sleep(1);
              echo "\r";
            }
@@ -359,7 +359,7 @@ while($i<10){
           if(count($mangcookie)==1){
           echo "                                                      \r";
            for($j = $dl;$j> 0;$j--){
-             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Giây";
+             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Y";
              sleep(1);
              echo "\r";
            }
@@ -429,7 +429,7 @@ while($i<10){
           if(count($mangcookie)==1){
           echo "                                                    \r";
            for($j = $dl;$j> 0;$j--){
-             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Giây";
+             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Y";
              sleep(1);
              echo "\r";
            }
@@ -489,7 +489,7 @@ while($i<10){
           if(count($mangcookie)==1){
           echo "                                                    \r";
            for($j = $dl;$j> 0;$j--){
-             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Giây";
+             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Y";
              sleep(1);
              echo "\r";
            }
@@ -558,7 +558,7 @@ while($i<10){
           if(count($mangcookie)==1){
           echo "                                                    \r";
            for($j = $dl;$j> 0;$j--){
-             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Giây";
+             echo $green."Menunggu Delay untuk menghindari pemblokiran$yellow $j Y";
              sleep(1);
              echo "\r";
            }
