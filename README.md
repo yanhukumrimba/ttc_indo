@@ -7,7 +7,7 @@ Coded by : Dian Rizki Pratama
 $ pkg update && pkg upgrade <br>
 $ pkg install python2<br>
 $ pkg install git<br>
-$ PKG install PHP<br>
+$ pkg install php<br>
 $ pip2 install requests<br>
 $ git clone https://github.com/yanhukumrimba/ttc_indo<br>
 $ cd ttc_indo<br>
